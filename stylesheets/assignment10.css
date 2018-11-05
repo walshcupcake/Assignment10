@@ -1,0 +1,171 @@
+body {
+	background-image: url("images/snoopy.jpg");
+	/*so for this background image to show up, I had to make a seperate 'images' folder in the stylesheets folder. I've never had to do this before, is this how it normally is?*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+/*I pushed everything to the right so the snoopy house in the background would show up*/
+
+h1 {
+	font-family: 'Acme', sans-serif;
+}
+
+h2 {
+	font-family: 'Acme', sans-serif;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index: 100;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  z-index: 100;
+}
+.dots {
+	text-align: center;
+	padding-top: 10px;
+	bottom: 0;
+	z-index: 100;
+}
+
+/*couldnt for the life of me figure out 
+
+.prev:hover, .next:hover {
+ 	background-color: white;
+}
+
+.text {
+ 	color: #f2f2f2;
+ 	font-size: 15px;
+ 	padding: 8px 12px;
+ 	position: absolute;
+ 	bottom: 8px;
+ 	width: 100%;
+ 	text-align: center;
+}
+
+.dot {
+	cursor: pointer;
+ 	height: 15px;
+ 	width: 15px;
+ 	margin: 0 2px;
+  	background-color: white;
+  	outline: solid 2px black;
+  	display: inline-block;
+ 	transition: background-color 0.6s ease;
+ 	z-index: 100;
+}
+
+.active, .dot:hover {
+  background-color: grey ;
+  z-index: 100;
+}
+
+
+.big {
+	position: absolute;
+	width: 70%;
+	height: 85%;
+	right: -1;
+	top: 0;
+	z-index: 1;
+	animation-name: fade;
+  	animation-duration: 3s;
+}
+
+@keyframes fade {
+  from { 
+  	opacity: .4
+  } 
+  to {
+  	opacity: 1
+  }
+}
+
+
+.right{
+	position: absolute;
+	width: 40%;
+	height: 45%;
+	top: 0;
+	right: 1em;
+	z-index: 1;
+}
+
+.middle {
+	position: absolute;
+	width: 15%;
+	height: 15%;
+	left: 58%;
+	top: 15em;
+	z-index: 1;
+}
+
+.down {
+	position: relative;
+	width: 16%;
+	height: 80%;
+	/*fully aware that this picture should stretch down further (on corgi it is the corgi with its ears down on the pastel blanket) but I
+	changed the height percentage to all sorts of numbers and it didn't do anything on my computer*/
+	top: 20em;
+	left: 58%;
+	z-index: 1;
+}
+
+.corner {
+	position: absolute;
+	width: 25%;
+	height: 40%;
+	top: 15em;
+	right: 2%;
+	z-index: 1;
+}
+
+.slideshowcontainer {
+	position: absolute;
+	width: 75%;
+	height: 80%;
+}
+
+.slides {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
