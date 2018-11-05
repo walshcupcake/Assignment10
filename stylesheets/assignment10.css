@@ -42,7 +42,7 @@ h2 {
 	z-index: 100;
 }
 
-/*couldnt for the life of me figure out 
+/*couldnt for the life of me figure out how to move the dots to the front*/
 
 .prev:hover, .next:hover {
  	background-color: white;
